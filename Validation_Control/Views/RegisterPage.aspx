@@ -39,6 +39,8 @@
                     <asp:Label runat="server" class="form-label">Age</asp:Label>
                     <asp:TextBox ID="age" runat="server" class="form-control"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="age" ErrorMessage="Age is empty" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="age" ErrorMessage=">=18 and <=40" MinimumValue="18" MaximumValue="40" ForeColor="Red" Type="Integer"></asp:RangeValidator>
+
                 </div>
                 <div>
                     <asp:Label runat="server">Mobile Number</asp:Label>
