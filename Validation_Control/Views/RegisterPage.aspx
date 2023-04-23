@@ -32,22 +32,24 @@
                 <div>
                     <asp:Label runat="server" class="form-label">Confirm Password</asp:Label>
                     <asp:TextBox ID="cpassword" runat="server" class="form-control"></asp:TextBox>
-                      <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="cpassword" ErrorMessage="Confirm Password is empty" ForeColor="Red"></asp:RequiredFieldValidator>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="cpassword" ErrorMessage="Confirm Password is empty" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="password" ControlToValidate="cpassword" ErrorMessage="confirm password didn't match" ForeColor="Red"></asp:CompareValidator>
                 </div>
                 <div>
                     <asp:Label runat="server" class="form-label">Age</asp:Label>
                     <asp:TextBox ID="age" runat="server" class="form-control"></asp:TextBox>
-                      <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="age" ErrorMessage="Age is empty" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="age" ErrorMessage="Age is empty" ForeColor="Red"></asp:RequiredFieldValidator>
                 </div>
                 <div>
                     <asp:Label runat="server">Mobile Number</asp:Label>
                     <asp:TextBox ID="mobile" TextMode="Number" runat="server" class="form-control"></asp:TextBox>
-                      <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="mobile" ErrorMessage="Mobile Number is empty" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="mobile" ErrorMessage="Mobile Number is empty" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="mobile" ErrorMessage="Invalid mobile number" ForeColor="Red" ValidationExpression="\d{10}"></asp:RegularExpressionValidator>
                 </div>
                 <div>
                     <asp:Label runat="server" class="form-label">Email Id</asp:Label>
                     <asp:TextBox ID="email" TextMode="Email" runat="server" class="form-control"></asp:TextBox>
-                      <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="email" ErrorMessage="Email Field is empty" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="email" ErrorMessage="Email Field is empty" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="email" runat="server" ErrorMessage="Invalid email id" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 </div>
                 <div>
