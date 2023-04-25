@@ -71,6 +71,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Functions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\RegisterPage.aspx.cs">
       <DependentUpon>RegisterPage.aspx</DependentUpon>

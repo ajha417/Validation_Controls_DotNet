@@ -37,16 +37,16 @@
                 </div>
                 <div>
                     <asp:Label runat="server" class="form-label">Age</asp:Label>
-                    <asp:TextBox ID="age" runat="server" class="form-control"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="age" ErrorMessage="Age is empty" ForeColor="Red"></asp:RequiredFieldValidator>
-                    <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="age" ErrorMessage=">=18 and <=40" MinimumValue="18" MaximumValue="40" ForeColor="Red" Type="Integer"></asp:RangeValidator>
+                    <asp:TextBox ID="ageit" runat="server" class="form-control"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="ageit" ErrorMessage="Age is empty" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="ageit" ErrorMessage=">=18 and <=40" MinimumValue="18" MaximumValue="40" ForeColor="Red" Type="Integer"></asp:RangeValidator>
 
                 </div>
                 <div>
                     <asp:Label runat="server">Mobile Number</asp:Label>
-                    <asp:TextBox ID="mobile" TextMode="Number" runat="server" class="form-control"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="mobile" ErrorMessage="Mobile Number is empty" ForeColor="Red"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="mobile" ErrorMessage="Invalid mobile number" ForeColor="Red" ValidationExpression="\d{10}"></asp:RegularExpressionValidator>
+                    <asp:TextBox ID="mobileno" TextMode="Number" runat="server" class="form-control"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="mobileno" ErrorMessage="Mobile Number is empty" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="mobileno" ErrorMessage="Invalid mobile number" ForeColor="Red" ValidationExpression="\d{10}"></asp:RegularExpressionValidator>
                 </div>
                 <div>
                     <asp:Label runat="server" class="form-label">Email Id</asp:Label>
@@ -55,7 +55,10 @@
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="email" runat="server" ErrorMessage="Invalid email id" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 </div>
                 <div>
-                    <asp:Button ID="registerBtn" runat="server" Text="Register" class="btn btn-primary col-md-5 mt-3"/>
+                    <asp:Label ID="ErrMsg" runat="server" />
+                </div>
+                <div>
+                    <asp:Button ID="registerBtn" runat="server" Text="Register" class="btn btn-primary col-md-5 mt-3" OnClick="registerBtn_Click"/>
                 </div>
             </div>
         </div>

@@ -105,13 +105,13 @@ namespace Validation_Control.Views
         protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
 
         /// <summary>
-        /// age control.
+        /// ageit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox age;
+        protected global::System.Web.UI.WebControls.TextBox ageit;
 
         /// <summary>
         /// RequiredFieldValidator5 control.
@@ -132,13 +132,13 @@ namespace Validation_Control.Views
         protected global::System.Web.UI.WebControls.RangeValidator RangeValidator1;
 
         /// <summary>
-        /// mobile control.
+        /// mobileno control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox mobile;
+        protected global::System.Web.UI.WebControls.TextBox mobileno;
 
         /// <summary>
         /// RequiredFieldValidator6 control.
@@ -184,6 +184,15 @@ namespace Validation_Control.Views
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+
+        /// <summary>
+        /// ErrMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ErrMsg;
 
         /// <summary>
         /// registerBtn control.
