@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -17,12 +18,24 @@ namespace Validation_Control.Views
             {
 
                 userInfo.Text = "Welcome," + Session["username"];
+                showBooks();
             }
             else
             {
                 Response.Redirect("LoginPage.aspx");
             }
 
+        }
+        public override void VerifyRenderingInServerForm(Control control)
+        {
+            
+        }
+        private void showBooks()
+        {
+            string Query = "SELECT * FROM Books_tbl";
+            DataTable dt = connection.getData(Query);
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
         }
     }
 }

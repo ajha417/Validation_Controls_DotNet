@@ -24,7 +24,7 @@ namespace Validation_Control.Views
         {
             try
             {
-
+                
                 string Query = "SELECT * FROM Users_tbl WHERE email='{0}' AND password='{1}'";
                 Query = string.Format(Query,emailID.Text.ToString(),password.Text.ToString());
               //  InfoMsg.Text = Query;
@@ -36,7 +36,7 @@ namespace Validation_Control.Views
                 }
                 else
                 {
-                    InfoMsg.Text = "Login";
+                   // InfoMsg.Text = "Login";
                     Session["username"] = emailID.Text.Substring(0,emailID.Text.IndexOf("@"));
                     Response.Redirect("Dashboard.aspx");
                 }
