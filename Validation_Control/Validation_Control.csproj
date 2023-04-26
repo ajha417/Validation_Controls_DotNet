@@ -70,6 +70,7 @@
     <Content Include="Views\Dashboard.aspx" />
     <Content Include="Views\LoginPage.aspx" />
     <Content Include="Views\RegisterPage.aspx" />
+    <Content Include="Views\ViewStatePage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +103,13 @@
     </Compile>
     <Compile Include="Views\UserMaster.Master.designer.cs">
       <DependentUpon>UserMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ViewStatePage.aspx.cs">
+      <DependentUpon>ViewStatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ViewStatePage.aspx.designer.cs">
+      <DependentUpon>ViewStatePage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
