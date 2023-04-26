@@ -74,6 +74,7 @@
     <Content Include="Views\NextPage.aspx" />
     <Content Include="Views\QueryStringPage.aspx" />
     <Content Include="Views\RegisterPage.aspx" />
+    <Content Include="Views\sessionManagement.aspx" />
     <Content Include="Views\ViewStatePage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -128,6 +129,13 @@
     </Compile>
     <Compile Include="Views\RegisterPage.aspx.designer.cs">
       <DependentUpon>RegisterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sessionManagement.aspx.cs">
+      <DependentUpon>sessionManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sessionManagement.aspx.designer.cs">
+      <DependentUpon>sessionManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\UserMaster.Master.cs">
       <DependentUpon>UserMaster.Master</DependentUpon>
