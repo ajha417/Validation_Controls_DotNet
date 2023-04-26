@@ -2,10 +2,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <center>
+
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+             <center>
         <asp:Label ID="userInfo" runat="server" Text="Welcome"/>
     </center>
     <div class="container-fluid">
+
         <div class="row">
              <div class="col-md-4">
                  <h2 class="text-success">Book Details</h2>
@@ -30,8 +35,8 @@
                  </div>
                  <div>
                      <asp:Button ID="addBtn" runat="server" Text="Add" class="btn btn-success" OnClick="addBtn_Click" />
-                     <asp:Button ID="updateBtn" runat="server" Text="Update" class="btn btn-warning" />
-                     <asp:Button ID="deleteBtn" runat="server" Text="Delete" class="btn btn-danger" />
+                     <asp:Button ID="updateBtn" runat="server" Text="Update" class="btn btn-warning" OnClick="updateBtn_Click" />
+                     <asp:Button ID="deleteBtn" runat="server" Text="Delete" class="btn btn-danger" OnClick="deleteBtn_Click" />
                  </div>
              </div>
             <div class="col-md-8">
@@ -53,5 +58,8 @@
             </div>
         </div>
     </div>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+   
     
 </asp:Content>
