@@ -69,6 +69,8 @@
   <ItemGroup>
     <Content Include="Views\Dashboard.aspx" />
     <Content Include="Views\LoginPage.aspx" />
+    <Content Include="Views\NextPage.aspx" />
+    <Content Include="Views\QueryStringPage.aspx" />
     <Content Include="Views\RegisterPage.aspx" />
     <Content Include="Views\ViewStatePage.aspx" />
     <Content Include="Web.config" />
@@ -89,6 +91,20 @@
     </Compile>
     <Compile Include="Views\LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NextPage.aspx.cs">
+      <DependentUpon>NextPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\NextPage.aspx.designer.cs">
+      <DependentUpon>NextPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QueryStringPage.aspx.cs">
+      <DependentUpon>QueryStringPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\QueryStringPage.aspx.designer.cs">
+      <DependentUpon>QueryStringPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\RegisterPage.aspx.cs">
       <DependentUpon>RegisterPage.aspx</DependentUpon>
