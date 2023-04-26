@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\applicationstates.aspx" />
     <Content Include="Views\Cookies.aspx" />
     <Content Include="Views\Dashboard.aspx" />
     <Content Include="Views\LoginPage.aspx" />
@@ -79,6 +80,13 @@
   <ItemGroup>
     <Compile Include="Models\Functions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\applicationstates.aspx.cs">
+      <DependentUpon>applicationstates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\applicationstates.aspx.designer.cs">
+      <DependentUpon>applicationstates.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Cookies.aspx.cs">
       <DependentUpon>Cookies.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
